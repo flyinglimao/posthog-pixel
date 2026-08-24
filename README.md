@@ -1,5 +1,7 @@
 # PostHog Pixel
 
+[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/flyinglimao/posthog-pixel)
+
 A tiny tracking pixel for sending anonymous article-view events to [PostHog](https://posthog.com/) when you can embed an image but cannot run JavaScript.
 
 It is designed for publishing platforms where you control article content enough to add an external `<img>`, but cannot install `posthog-js`.
@@ -60,6 +62,16 @@ The PostHog event is sent with:
 - The platform must load the image from the visitor's browser rather than permanently proxying/caching it
 
 ## Deploy to Cloudflare Workers
+
+### One-click deployment
+
+Click the button below to let Cloudflare clone this repository, configure the Worker, prompt for the required `POSTHOG_API_KEY` secret, and deploy it using Workers Builds:
+
+[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/flyinglimao/posthog-pixel)
+
+> Cloudflare's Deploy to Cloudflare flow requires the source repository to be public. If this repository is private, use the manual deployment steps below until it is made public.
+
+### Manual deployment
 
 Clone the repository and install dependencies:
 
