@@ -1,0 +1,16 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "posthog-pixel",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-08-24",
+  "observability": {
+    "enabled": true
+  },
+  "vars": {
+    "POSTHOG_HOST": "https://us.i.posthog.com",
+    "EVENT_NAME": "article_viewed",
+    "COOKIE_NAME": "ph_pixel_id",
+    "COOKIE_MAX_AGE": "31536000",
+    "ALLOWED_REFERRER_HOSTS": ""
+  }
+}
