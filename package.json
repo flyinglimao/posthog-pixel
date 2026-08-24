@@ -11,5 +11,12 @@
   "devDependencies": {
     "typescript": "^5.9.0",
     "wrangler": "^4.0.0"
+  },
+  "cloudflare": {
+    "bindings": {
+      "POSTHOG_API_KEY": {
+        "description": "Your PostHog **project token** (`phc_...`) used for event ingestion. Find it in your PostHog project settings."
+      }
+    }
   }
 }
